@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Svastik Kanwar portfolio</title>
+  <meta name="title" content="Svastik Kanwar portfolio">
+  <meta name="description" content="This is a personal portfolio website">
+  <link rel="icon" type="image/x-icon" href="assets/images/download.ico"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/font/font.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-1.png">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+</head>
+<body id="top">
+  <!-- - #PRELOADER-->
+  <div class="preloader" data-preloader>
+    <span class="line"></span>
+  </div>
+  <!-- - #HEADER-->
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="164" height="96" alt="logo"> <!-- svastik kanwat name svg!-->
+      </a>
+      <nav class="navbar" data-navbar>
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="84" height="26" alt="logo">
+          </a>
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+        <ul class="navbar-list"> <!-- # IN HREF navigate to local div-->
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+          <li>
+            <a href="#service" class="navbar-link" data-nav-link>Skills</a>
+          </li>
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+          <li>
+            <a href="#project" class="navbar-link" data-nav-link>Projects</a>
+          </li>
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#contact" class="btn btn:hover">
+        <span class="span">Contact me</span>
+        <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+      </a>
+      <button class="nav-open-btn btn:hover" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+      </button>
+      <div class="overlay" data-overlay data-nav-toggler></div>
+    </div>
+  </header>
+  <main>
+    <article>
+      <!--         - #HERO-->
+      <div class="hero text-center" id="home" style="height:40%;">
+        <div class="container">
+          <video autoplay muted loop id="video-background">
+            <source src="pexel.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="banner-outline has-after">
+            <div class="hero-banner img-holder has-after" style="--width:200 ; --height: 300;" data-tilt>
+              <img src="./assets/images/my.jpg" width="200" height="300" alt="Svastik Kanwar" class="img-cover">
+            </div>
+          </div>
+          <div class="hero-content">
+            <h4 class="h1 title" style="color: yellowgreen; font-weight: bold">Hello,I'm Svastik Kanwar </h4> <br> <h2>,Computer Engineering Pre-final year Undergraduate </h2>
+            <div class="wrapper">
+              <a href="./assets/RESUME SVASTIK KANWAR-compressed.pdf" class="btn btn:hover" target="_blank">
+                <span class="span">Download Resume</span>
+                <ion-icon name="cloud-download-outline" aria-hidden="true"></ion-icon>
+              </a>
+              <p class="hero-text">
+              </p>
+            </div>
+          </div>
+          <img src="./assets/images/hero-shape-1.png" width="559" height="232" alt="shape" class="shape shape-1">
+          <img src="./assets/images/hero-shape-2.png" width="1358" height="497" alt="shape" class="shape shape-2">
+        </div>
+      </div>
+      <!-- 
+        - #SERVICE
+      -->
+      <section class="service text-center" aria-label="my services" id="service">
+        <div class="container">
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="./assets/images/webd.svg" width="80" height="80" loading="lazy"
+                    alt="service icon">
+                </div>
+                <h3 class="card-title">
+                  <a href="#">
+                    Web <br>
+                    Development
+                  </a>
+                </h3>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="./assets/images/ml.svg" width="80" height="80" loading="lazy"
+                    alt="service icon">
+                </div>
+                <h3 class="card-title">
+                  <a href="#">
+                    Machine Learning <br>
+                  </a>
+                </h3>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="./assets/images/code.svg" width="80" height="80" loading="lazy"
+                    alt="service icon">
+                </div>
+                <h3 class="card-title">
+                  <a href="#">
+                    Competitive <br>
+                    Coding
+                  </a>
+                </h3>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="./assets/images/phone (2).svg" width="80" height="60" loading="lazy"
+                    alt="service icon">
+                </div>
+                <h3 class="card-title">
+                  <a href="#">
+                    Mobile <br>
+                    App Dev
+                  </a>
+                </h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!------------------------ #ABOUT------------------------------------------------>
+      <section class="section about" aria-label="about-me" id="about">
+        <div class="container">
+          <div class="tab-container">
+            <ul class="tab-btn-list">
+              <li class="tab-btn-item">
+                <button class="tab-btn title h6 active" data-tab-btn="about">About Me</button>
+              </li>
+              <li class="tab-btn-item">
+                <button class="tab-btn title h6" data-tab-btn="skillset">Skillset</button>
+              </li>
+              <li class="tab-btn-item">
+                <button class="tab-btn title h6" data-tab-btn="interview">Experience</button>
+              </li>
+              <li class="tab-btn-item">
+                <button class="tab-btn title h6" data-tab-btn="awward">Education</button>
+              </li>
+              <li class="tab-btn-item">
+                <button class="tab-btn title h6" data-tab-btn="exhibition">Accomplishments</button>
+              </li>
+            </ul>
+            <div class="tab-content active" data-tab-content="about">
+              <div class="grid-list">
+                <figure class="about-banner img-holder" style="--width: ; --height: ;" data-tilt>
+                  <img src="./assets/images/about-banner.jpg" width="570" height="420" loading="lazy" alt="about banner"
+                    class="img-cover">
+                </figure>
+                <div class="about-content">
+                  <h2 class="h4 title section-title">
+                     I Like to take up new challenges and new challengers ^_^ too!
+                     <br>
+                  </h2>
+                  <p class="section-text">
+                     I am looking for oppurtunities in Software Development engineering domain.
+                  </p>
+                  <ul class="about-list">
+                    <li class="about-item">
+                      <p class="list-title">Name</p>
+                      <span class="span title h5">Svastik Kanwar</span>
+                    </li>
+                    <li class="about-item">
+                      <p class="list-title">Phone Number</p>
+                      <span class="span title h5">+ 91 988&^$%^&&</span>
+                    </li>
+                    <li class="about-item">
+                      <p class="list-title">Email Address</p>
+                      <span class="span title h5"><a href="mailto:kanwar7svastik@gmail.com">kanwar7svastik@gmail.com</a></span>
+                    </li>
+                    <li class="about-item" style="margin-right: 10px;">
+                      <p class="list-title">Social Network</p>
+                      <div class="social-list">
+                        <a href="https://www.linkedin.com/in/svastik-kanwar-7sk%C3%A0ezr73/?originalSubdomain=in" target="_blank"><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-1024.png" style="height: 32px;width: 32px;"></a>
+      <a href="https://twitter.com/Svastik_Kanwar"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/768px-Logo_of_Twitter.svg.png?20220821125553" style="height: 28px;width: 32px;"></a>
+      <a href="https://www.instagram.com/svastik.kanwar/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" style="height: 32px;width: 32px;"></a>
+      <a href="https://github.com/Svastik73"  target="_blank"><img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" style="height: 32px;width: 32px;"></a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content" data-tab-content="skillset">
+              <div class="grid-list">
+                <div class="skill-content">
+                  <h3 class="h4 title section-title">
+                        My skills are in domain ML,Frontend,Backend and Competitive Programming.
+                  </h3>
+                  <p class="section-text">
+                     I strive to enhance my skillset in due course of time!
+                  </p>
+                  <ul class="skill-list">
+                    <li>
+                      <div class="skill-wrapper">
+                        <span class="span">Backend Development</span>
+                        <span class="value">65%</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 65%"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="skill-wrapper">
+                        <span class="span">Website Development</span>
+                        <span class="value">95%</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 95%"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="skill-wrapper">
+                        <span class="span">Design UI & UX</span>
+                        <span class="value">85%</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="skill-wrapper">
+                        <span class="span">Machine Learning</span>
+                        <span class="value">55%</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 55%"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <figure class="skill-banner img-holder" style="--width: 570; --height: 420;" data-tilt>
+                  <img src="./assets/images/skill-banner.jpg" width="570" height="420" loading="lazy" alt="skill banner"
+                    class="img-cover">
+                </figure>
+              </div>
+            </div>
+            <div class="tab-content" data-tab-content="interview">
+              <div class="grid-list">
+<!--   Use for experience tab-->
+                <div class="work-experience-container">
+                  
+                   <div class="job-entry">
+                    <div class="duration">June 2024 - July 2024</div>
+                    <h3> <a  href="">IIT Ropar  </a></h3>
+                      <div class="job-details">          
+                          <p style="color: blanchedalmond;">Research Intern</p><br>
+<p> <ion-icon name="logo-ionic" color="primary" style="display: inline-block; vertical-align: middle"></ion-icon> Assisted and documented the machine learning model for social media post labeling  <br>project. Mentored under proffesor Samir Gupta. </p>                        
+                       
+                         </div>
+                 </div>
+                 <div class="job-entry">
+                     <div class="duration">May 2023 - Aug 2023</div>
+                     <h3> <a href="">Suraksha One </a></h3>
+                       <div class="job-details">
+                          
+                           <p style="color: blanchedalmond;">Android Development and Machine Learning Intern</p><br>
+                           <p><ion-icon name="logo-ionic" color="primary" style="display: inline-block; vertical-align: middle"></ion-icon> 	Developed a credit score prediction model that assessed creditworthiness based on <br>customer data and clustering results.<br>
+                            <ion-icon name="logo-ionic" color="primary" style="display: inline-block; vertical-align: middle"></ion-icon>   Developed a mobile app on flutter framework, which is used to provide information<br> to farmers across India regarding various agricultural activities.
+                            <br>	<ion-icon name="logo-ionic" color="primary" style="display: inline-block; vertical-align: middle"></ion-icon>  Designed a  database schema (MySQL) to efficiently store and retrieve agricultural data.
+                            <br><ion-icon name="logo-ionic" color="primary" style="display: inline-block; vertical-align: middle"></ion-icon> 	Implemented RESTful API endpoints to facilitate seamless communication between the<br> mobile app and the server, ensuring real-time data synchronization.
+                            </p>
+                        </div>
+                      </div>
+               </div>    
+              </div>
+            </div>
+            <div class="tab-content" data-tab-content="awward">   <!-- Education details!-->
+              <h3 class="h4 title section-title">
+              Academic Info. 
+              </h3>
+              <ul class="grid-list">
+                <div class="work-experience-container">
+                  
+                  <div class="job-entry">
+                   <div class="duration">August 2021 - Ongoing</div>
+                   <h3> <a  href="">National Institute Of Technology ,Kurukshetra </a></h3>
+                     <div class="job-details">          
+                         <p style="color: blanchedalmond;"> Bachelor Of Technology</p><br>
+<p> <ion-icon name="library-outline" style="display: inline-block; vertical-align: middle"></ion-icon>   Grade: 8.759 (upto 5th semester) 
+  <br>
+  <ion-icon name="library-outline" style="display: inline-block; vertical-align: middle"></ion-icon> SIH -2023 Finalist under a project of ISRO!
+                        </div>
+                </div>
+                <div class="job-entry">
+                    <div class="duration">April 2018- April 2020</div>
+                    <h3> <a href="">Allen Institute and K-Key Public School</a></h3>
+                      <div class="job-details">
+                          <p style="color: blanchedalmond;"> Class 12th (Senior Secondary School)</p><br>
+                          <ion-icon name="library-outline" style="display: inline-block; vertical-align: middle"></ion-icon> Subjects : Maths, Physics,Chemistry, Language & PHE<br>
+                          <ion-icon name="library-outline" style="display: inline-block; vertical-align: middle"></ion-icon> Grade : 87% (HP board) <br>
+                          <ion-icon name="library-outline" style="display: inline-block; vertical-align: middle"></ion-icon> JEE Mains Rank: 5475 <br>
+                          <ion-icon name="library-outline" style="display: inline-block; vertical-align: middle"></ion-icon>  B.Arch Rank : 874 <br>
+                          <ion-icon name="library-outline" style="display: inline-block; vertical-align: middle"></ion-icon> Jee Advanced Rank:7600  <br>
+                       </div>
+                 </div>
+                 <div class="job-entry">
+                  <div class="duration">April 2010- April 2018</div>
+                  <h3> <a href="">DAV Public School</a></h3>
+                    <div class="job-details">
+                        <p style="color: blanchedalmond;"> Class 10th ( Secondary School)</p><br>
+                        <ion-icon name="library-outline" style="display: inline-block; vertical-align: middle"></ion-icon>  Subjects : Maths,Science, Hindi, English, IT and Arts.. <br>
+                        <ion-icon name="library-outline" style="display: inline-block; vertical-align: middle"></ion-icon> Grade : 94.5% (CBSE) <br>
+                        <ion-icon name="library-outline" style="display: inline-block; vertical-align: middle"></ion-icon> NTSE Stage 1 Qualified <br>
+                        <ion-icon name="library-outline" style="display: inline-block; vertical-align: middle"></ion-icon> Won several Scholarships <br>                      
+                     </div>
+                    </div>
+              </div>    
+              </ul>
+            </div>
+<!------Achievments--------->
+            <div class="tab-content" data-tab-content="exhibition">   
+                <div class="yulu">
+                <ul class="slider-list">
+                  <li class="slider-item">
+                    <div class="project-card text-center">
+                      <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                        <img src="./assets/images/sih23.webp" width="1000" height="763" loading="lazy" class="img-cover">
+                        <a href="#" class="btn btn:hover">
+                          <span class="span">Qualified for SIH FINALS 2023</span>
+                          <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                        </a>
+                      </div>
+                      <div class="card-content">
+                        <p class="card-subtitle">SIH 2023 Finalist</p>
+                        <h3 class="title h3">
+                          <a href="#" class="card-title"><br>A Problem Statement under ISRO</a>
+                        </h3>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="slider-item">
+                    <div class="project-card text-center">
+                      <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                        <img src="./assets/images/rs=w_400,cg_true.webp" width="1000" height="763" loading="lazy"
+                          class="img-cover">
+                          <a href="#" class="btn btn:hover">
+                          <span class="span">NTSE Stage 1 Scholar</span>
+                          <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                        </a>
+                      </div>
+                      <div class="card-content">
+                        <p class="card-subtitle">SCERT</p>
+                        <h3 class="title h3">
+                          <a href="#" class="card-title">Among top 2000 Students in class 10th NTSE Exam</a>
+                        </h3>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="slider-item">
+                    <div class="project-card text-center">
+                      <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                        <img src="./assets/images/LeetCode_Sharing.png" width="1000" height="763" loading="lazy"
+                          alt="Project poster: Flutter Framework & Warframe Design" class="img-cover">
+                         <a href="#" class="btn btn:hover">
+                          <span class="span">Top 13% on Leetcode</span>
+                           <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                        </a>
+                      </div>
+                      <div class="card-content">
+                        <p class="card-subtitle">DSA and Competitive Programming</p>
+                           <h3 class="title h3">
+                          <a href="#" class="card-title">Solved Over 600 Questions</a>
+                        </h3>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="slider-item">
+                    <div class="project-card text-center">
+                       <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                        <img src="./assets/images/JEE.jpg" width="1000" height="763" loading="lazy"
+                          alt="Project poster: Full Web Development Project With JavaScript" class="img-cover">
+                          <a href="#" class="btn btn:hover">
+                          <span class="span">JEE Mains and Advanced Rank holder</span>
+                           <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                        </a>
+                      </div>
+                      <div class="card-content">
+                        <p class="card-subtitle">JEE Mains & Advanced</p>
+                        <h3 class="title h3">
+                          <a href="#" class="card-title" style="font-size: medium;">JEE Mains : Top 99.5% Among a million candidates</a>
+                         <br> <a href="#" class="card-title" style="font-size: medium;">Jee Advanced Top 7000 ,amaong 200,000 Candidates</a>
+                        </h3>
+                      </div>
+                    </div>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!----------------------- #CTA----------------------------------------------------->
+      <section class="section cta" >
+        <div class="container">
+          <h3 class="title h2 section-title text-center">
+            “…But they plan, and He plans. And He is the best of planners.” [8:30]
+          </h3> 
+        </div>
+      </section>
+
+      <!-- ----------------------- #PROJECTS---------------->
+      <section class="section project" id="project">
+        <ul class="slider-list">
+         
+          <li class="slider-item">
+            <div class="project-card text-center">
+              <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                <img src="./assets/images/flutter_plant.jpg" width="1000" height="763" loading="lazy" class="img-cover">
+                <a href="#" class="btn btn:hover">
+                  <span class="span">Project Details</span>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+              <div class="card-content">
+                <p class="card-subtitle">Machine Learning</p>
+                <h3 class="title h3">
+                  <a href="#" class="card-title">Flutter app to detect crop disease</a>
+                </h3>
+              </div>
+            </div>
+          </li>
+
+          <li class="slider-item">
+            <div class="project-card text-center">
+
+              <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                <img src="./assets/images/ss3.jpg" width="1000" height="763" loading="lazy"
+                  alt="Project poster: Front End Development & Maintenance" class="img-cover">
+
+                <a href="https://svastik73.github.io/Algorithm-Visualizer/index.html" class="btn btn:hover">
+                  <span class="span">Algorithm Visualizer</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+
+              <div class="card-content">
+                <p class="card-subtitle">Web Development,DSA</p>
+
+                <h3 class="title h3">
+                  <a href="#" class="card-title">Front End Development</a>
+                </h3>
+              </div>
+
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="project-card text-center">
+              <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                <img src="./assets/images/fl.png" width="1000" height="763" loading="lazy" class="img-cover">
+                <a href="#" class="btn btn:hover">
+                  <span class="span">Catalogue App</span>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+              <div class="card-content">
+                <p class="card-subtitle">Android , Backend</p>
+                <h3 class="title h3">
+                  <a href="#" class="card-title">Flutter, Figma</a>
+                </h3>
+              </div>
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="project-card text-center">
+              <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                <img src="./assets/images/landscape.jfif" width="1000" height="763" loading="lazy" class="img-cover">
+                <a href="https://drive.google.com/drive/folders/1XhG76300VBxg-3lj04fJddRrhjlv0ke3?usp=drive_link" class="btn btn:hover">
+                  <span class="span">Landscape change detection</span>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+              <div class="card-content">
+                <p class="card-subtitle">Machine Learning , Neural Network</p>
+                <h3 class="title h3">
+                  <a href="#" class="card-title">TensorFlow, YoloV5</a>
+                </h3>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-----------------------------#SKILLS SECTION                    s-->
+    <section>
+       <div class="container">
+        <hr style="margin: 20px; color: azure;">
+        <h2 class="title h2 section-title"  style="text-align: center;">Skills</h2>
+      <div id="skillo" style="display: flex;overflow-x: auto; padding: 20px;">
+        <div><a href="#" class="cardo">CPP</a>  <br> <a href="#" class="cardo">Python</a> <br> <a href="#" class="cardo">Java</a></div>
+        <div><a href="#" class="cardo">Android Studio</a> <bR><a href="#" class="cardo">Machine Learning</a> <br> <a href="#" class="cardo">Web Development</a></div>
+        <div><a href="#" class="cardo">Django</a><br> <a href="#" class="cardo">My SQL</a><br><a href="#" class="cardo">React</a></div>
+        <div><a href="#" class="cardo">JavaScript</a><br><a href="#" class="cardo">Flutter</a><br><a href="#" class="cardo">NodeJS</a></div>
+
+        <!-- Add more divs as needed -->
+      </div>
+       </div>
+    </section>
+      <!------=------------------ - #CONTACT me---------------->
+      <section class="section contact"  id="contact">
+        <div class="container">
+          <h2 class="title h2 section-title">Lets connect</h2>
+          <div class="contact-content">
+            <form action="./index.html" method="post" class="contact-form">
+              <input type="text" name="name" placeholder="Full name" autocomplete="off" required class="input-field">
+              <input type="email" name="email_address" placeholder="Email address" autocomplete="off" required class="input-field">           
+              <input type="tel" name="phone" placeholder="Phone" autocomplete="off" class="input-field">            
+              <textarea name="message" placeholder="Enter message" required class="input-field"></textarea>         
+              <label for="rating">Rate your experience:</label>
+              <input type="range" id="rating" name="rating" min="1" max="6" step="1" value="3" class="input-field">       
+              <button type="submit" class="btn btn:hover">
+                <span class="span">Connect</span>
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </button>
+           </form>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27004.26370366133!2d76.2985655596483!3d32.216813188262655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b50df65bd7311%3A0x3e08bdb100c6dc10!2sDharamshala%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1707327351870!5m2!1sen!2sin" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <ul class="contact-list">
+              <li class="contact-item">
+                <div class="item-icon">
+                  <img src="./assets/images/phone.svg" width="50" height="50" loading="lazy"
+                    alt="contact icon">
+                </div>
+                <div>
+                  <span class="title h6">+91 9882.....</span>
+                </div>
+              </li>
+              <li class="contact-item">
+                <div class="item-icon">
+                  <img src="./assets/images/earth.svg" width="50" height="50" loading="lazy"
+                    alt="contact icon">
+                </div>
+                <div>
+                  <address class="title h6">
+                      5th floor of ...
+                  </address>
+                </div>
+              </li>
+              <li class="contact-item">
+                <div class="item-icon">
+                  <img src="./assets/images/email.svg" width="50" height="50" loading="lazy"
+                    alt="contact icon">
+                </div>
+                <div>
+                  <span class="title h6"><a href="mailto:kanwar7svastik@gmail.com" class="card-title">kanwar7svastik@gmail.com <a></span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!--------------------- - #FOOTER------------------------------->
+  <footer class="footer">
+    <div class="container">
+      <a href="#top" class="back-top-btn">
+        <span class="span">Back To Top</span>
+        <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+      </a>
+      <img src="./assets/images/star.svg" width="84" height="56" alt="logo"> 
+      <p> hehe, just flaunting my svg </p>
+    </div>
+  </footer>
+
+  <!-- - #CUSTOM CURSOR-->
+  <div class="cursor-dot" data-cursor></div>
+  <div class="cursor-outline" data-cursor></div>
+  <!--- custom js link  -->
+  <script src="./assets/js/script.js"></script>
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
